@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Boleta from '../components/Boleta';
 import FirstBlock from '../components/FirstBlock';
-import Header from '../Header';
+import Header from '../components/Header';
 import Maestros from '../components/Maestros';
 import Perfil from '../components/Perfil';
 

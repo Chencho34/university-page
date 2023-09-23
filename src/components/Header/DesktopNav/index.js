@@ -11,11 +11,11 @@ const paths = [
 
 export default function DesktopNav() {
   return (
-    <nav className="nav">
+    <nav className="nav shadow-xl">
       <figure className="nav__content-logo">
         <h1>Logo</h1>
       </figure>
-      <ul className="nav__links scale-up-center">
+      <ul className="nav__links">
         {paths.map(({ path, item }) => (
           <li key={item} className="nav__link">
             <Link to={path} className="nav__item">{item}</Link>
