@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../../../assets/logo_tecnm.png';
 import './styles.css';
 
 const paths = [
@@ -11,9 +12,9 @@ const paths = [
 
 export default function DesktopNav() {
   return (
-    <nav className="nav shadow-xl">
-      <figure className="nav__content-logo">
-        <h1>Logo</h1>
+    <nav className="nav shadow-md rounded-b-lg">
+      <figure className="nav__content-logo pl-0">
+        <img src={Logo} className="nav__logo" alt="Logo" />
       </figure>
       <ul className="nav__links">
         {paths.map(({ path, item }) => (
