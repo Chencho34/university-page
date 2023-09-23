@@ -20,15 +20,10 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <div className="relative">
-            <button type="button" className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
-              Inicio
-            </button>
-          </div>
-
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">Boletas</a>
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">Maestros</a>
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">Perfil</a>
+          <Link className="text-sm font-semibold leading-6 text-gray-900" to="/">Inicio</Link>
+          <Link className="text-sm font-semibold leading-6 text-gray-900" to="/boleta">Boleta</Link>
+          <Link className="text-sm font-semibold leading-6 text-gray-900" to="/maestros">Maestros</Link>
+          <Link className="text-sm font-semibold leading-6 text-gray-900" to="/perfil">Perfil</Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
