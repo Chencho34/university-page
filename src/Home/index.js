@@ -1,17 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import Navbar from '../Header';
 import Boleta from '../components/Boleta';
 import FirstBlock from '../components/FirstBlock';
-import DesktopNav from '../Header/DesktopNav';
+import Header from '../Header';
 import Maestros from '../components/Maestros';
 import Perfil from '../components/Perfil';
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
-      <DesktopNav />
+      <Header />
       <Routes>
         <Route index path="/" element={<FirstBlock />} />
         <Route path="/boleta" element={<Boleta />} />
